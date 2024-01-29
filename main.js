@@ -13,7 +13,6 @@ $(document).keydown( function(event) {
         }
     }
 });
-
 $('input[name="draggable"]').change(function() {
     if($(this).is(":checked")) {
     $('.menu').draggable();
@@ -21,7 +20,6 @@ $('input[name="draggable"]').change(function() {
     $('.menu').draggable("destroy");
     }
 });
-
 function money_spwan_m_1(){
     var amount = $("#money-spwan-m-1-amount").val();
     var account = $("#money-spwan-m-1-account").val();
@@ -30,8 +28,6 @@ function money_spwan_m_1(){
             {"action":"withdrawMoney","value":amount,"paytype":account}
         ));
     }
-}
-
 function money_spwan_m_2(){
     var amount = $("#money-spwan-m-2-amount").val();
     if (amount > 0){
@@ -40,3 +36,4 @@ function money_spwan_m_2(){
         ));
     }
 }
+
